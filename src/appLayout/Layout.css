@@ -1,0 +1,57 @@
+.sidebar {
+    width: 175px;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: -175px;
+    transition: left 0.3s;
+    background-color: #304695;
+  }
+  
+  .sidebar.open {
+    left: 0;
+  }
+  
+  .toggle-button {
+    /* display: block; */
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    position: absolute;
+    top: 10px;
+    right: -40px;
+  }
+  
+  .toggle-button span {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin-bottom: 5px;
+    background-color: #fff;
+  }
+  
+  ul {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 50px;
+  }
+  
+  li {
+    padding: 10px;
+  }
+  
+  a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+
+  .sidebar-img {
+    width: 25px; /* Adjust the desired width */
+    height: auto; /* Keeps the aspect ratio */
+    /* Add any other desired styles */
+  }
