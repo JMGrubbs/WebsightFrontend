@@ -5,7 +5,7 @@
     top: 0;
     left: -175px;
     transition: left 0.3s;
-    background-color: #304695;
+    background-color: #2F4B26;
   }
   
   .sidebar.open {
@@ -54,4 +54,25 @@
     width: 25px; /* Adjust the desired width */
     height: auto; /* Keeps the aspect ratio */
     /* Add any other desired styles */
+  }
+
+
+  .main-container {
+    display: flex;
+    justify-content: center;
+  }
+
+  .aboutinfo-container {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .aboutinfo-inner-container {
+    flex: 1;
+    padding: 10px;
+  }
+
+  .pagename-container {
+    display: flex;
+    justify-content: center;
   }
