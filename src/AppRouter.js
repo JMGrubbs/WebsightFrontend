@@ -1,10 +1,10 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Routes, Navigate } from 'react-router-dom';
 import Layout from './appLayout/Layout'
-import Home from './home/Home';
-import AppAbout from './about/about';
-import AppContacts from './contact/contact';
-import DisplayProjects from './projects/Projects';
+import Home from './components/home/Home';
+import AppAbout from './components/about/about';
+import AppContacts from './components/contact/contact';
+import DisplayProjects from './components/projects/Projects';
 
 function AppRouter() {
   return (
