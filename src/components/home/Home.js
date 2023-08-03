@@ -1,6 +1,6 @@
-import React from 'react';
+import { React } from 'react';
 
-function Home() {
+const Home = () => {
     return ( 
     <div>
         <h2>Hello and welcome</h2>

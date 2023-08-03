@@ -4,18 +4,18 @@ import Layout from './appLayout/Layout'
 import Home from './components/home/Home';
 import AppAbout from './components/about/about';
 import AppContacts from './components/contact/contact';
-import DisplayProjects from './components/projects/Projects';
+import Projects from './components/projects/Projects';
 
-function AppRouter() {
+const AppRouter = (props) => {
   return (
     <Router>
         <Routes>
-          <Route path="/" element={<Layout />} >
-            <Route path="/" element={<Home />} />
-            <Route path="/projects" element={<DisplayProjects />} />
-            <Route path="/contact" element={<AppContacts />} />
-            <Route path="/about" element={<AppAbout />} />
-            <Route path="*" element={<Navigate to="/" />} />
+          <Route path="/" element={<Layout props={props}/>} >
+            <Route path="/" element={<Home props={props}/>} />
+            <Route path="/projects" element={<Projects props={props}/>} />
+            <Route path="/contact" element={<AppContacts props={props}/>} />
+            <Route path="/about" element={<AppAbout props={props}/>} />
+            <Route path="*" element={<Navigate to="/" props={props}/>} />
           </Route>
         </Routes>
   </Router>

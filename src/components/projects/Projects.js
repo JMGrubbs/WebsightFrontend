@@ -1,8 +1,17 @@
-import React from 'react';
-import DisplayProject from '.Project.js';
+import { React, useState, useEffect } from 'react';
+import { FetchProjects } from './FetchProjects';
+import Project from './DisplayProject.js';
 
-const Projects = () => {
-    let projects = []
+const Projects = (props) => {
+    const [Projects, setProjects] = useState([]);
+    const [configAPI, setConfigAPI] = useState(props);
+    
+    useEffect(() => {
+        FetchProjects(configAPI).then(retProjects => {
+            setProjects(retProjects)
+          });
+    }, []);
+
     return ( 
         <div className="aboutme-container">
         <div className="pagename-container">
@@ -12,15 +21,10 @@ const Projects = () => {
             <div className="aboutinfo-inner-container">
                 <div className="list-container">
                     <ul>
-                        {projects.map((project) => {
+                        {Projects.map((project) => {
                             return (
-                                <DisplayProject
-                                    key={project.id}
-                                    id={project.id}
-                                    name={project.name}
-                                    link={project.link}
-                                    description={project.description}
-                                    image={project.image}
+                                <Project
+                                    key={project.project_id} props={project}
                                 />
                             )
                         })}
