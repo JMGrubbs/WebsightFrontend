@@ -1,5 +1,5 @@
 const DisplayProject = (props) => {
-    return(
+    return (
         <li>
             <div>
                 <h3>{props.props.project_name}</h3>

@@ -1,5 +1,7 @@
+import InfoEl from './info.js';
+
 function AppAbout() {
-    return ( 
+    return (
         <div className="aboutme-container">
             <div className="pagename-container">
                 <h1> ABOUT ME</h1>
@@ -12,22 +14,13 @@ function AppAbout() {
                     <div className="list-container">
                         <ul>
                             <li>
-                                <div>
-                                    <h3>Job One</h3>
-                                    <p>Stuff about this position</p>
-                                </div>
+                                <InfoEl title="Job One" text="Stuff about this position" />
                             </li>
                             <li>
-                                <div>
-                                    <h3>Job One</h3>
-                                    <p>Stuff about this position</p>
-                                </div>
+                                <InfoEl title="Job Two" text="Stuff about this position" />
                             </li>
                             <li>
-                                <div>
-                                    <h3>Job One</h3>
-                                    <p>Stuff about this position</p>
-                                </div>
+                                <InfoEl title="Job Three" text="Stuff about this position" />
                             </li>
                         </ul>
                     </div>
@@ -39,16 +32,10 @@ function AppAbout() {
                     <div className="list-container">
                         <ul>
                             <li>
-                                <div>
-                                    <h3>Education One</h3>
-                                    <p>Stuff about this position</p>
-                                </div>
+                                <InfoEl title="School One" text="Stuff about this school" />
                             </li>
                             <li>
-                                <div>
-                                    <h3>Education Two</h3>
-                                    <p>Stuff about this position</p>
-                                </div>
+                                <InfoEl title="School Two" text="Stuff about this school" />
                             </li>
                         </ul>
                     </div>
